@@ -1,6 +1,7 @@
 from datetime import datetime
 from requests import get
 
+
 api = "http://api.nbp.pl/api/exchangerates/tables/A/{date}/?format=json"
 print("Kalkulator walut")
 
