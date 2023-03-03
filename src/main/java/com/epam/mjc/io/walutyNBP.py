@@ -1,7 +1,6 @@
 from datetime import datetime
 from requests import get
 
-
 api = "http://api.nbp.pl/api/exchangerates/tables/A/{date}/?format=json"
 print("Kalkulator walut")
 
@@ -19,5 +18,4 @@ while True:
     if currency in kursy.keys():
         break
     print("Waluta niepoprawna")
-
 print(f"Kurs na dzien {date:%Y-%m-%d}: 1 {currency} = {kursy[currency]} PLN")
